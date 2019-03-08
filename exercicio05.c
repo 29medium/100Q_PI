@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int trailingZ (unsigned int n)
 {
     int r=0;
