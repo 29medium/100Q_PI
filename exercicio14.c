@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-char charMaisfreq (char s[]) {
+char charMaisfreq (char s[]) 
+{
     int i, j, cont[127]={0}, max;
     
     if (s[0]=='\0') return 0;
