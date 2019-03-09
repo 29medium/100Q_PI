@@ -32,8 +32,8 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 27✔ ||
 28✔ ||
 29✔ ||
-30❌ ||
-31❌ ||
+30✔ ||
+31✔ ||
 32✔ ||
 33✔ ||
 34❌ ||
