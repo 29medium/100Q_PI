@@ -15,13 +15,13 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 10❌ ||
 11✔ ||
 12✔ ||
-13❌ ||
+13✔ ||
 14✔ ||
 15✔ ||
 16❌ ||
 17✔ ||
 18✔ ||
-19❌ ||
+19✔ ||
 20✔ ||
 21✔ ||
 22✔ ||
