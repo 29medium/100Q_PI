@@ -50,6 +50,6 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 45✔ ||
 46✔ ||
 47✔ ||
-48❌ ||
-49❌ ||
+48✔ ||
+49✔ ||
 50❌ ||
