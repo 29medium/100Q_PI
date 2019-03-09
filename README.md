@@ -49,7 +49,7 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 44✔ ||
 45✔ ||
 46✔ ||
-47❌ ||
+47✔ ||
 48❌ ||
 49❌ ||
 50❌ ||
