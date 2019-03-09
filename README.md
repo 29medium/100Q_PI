@@ -3,10 +3,10 @@ Questões de PI - Parte 1
 
 Todas as perguntas neste repositório estão totalmente corretas nos testes da codeboard.
 
-01 - ✔
-02 - ✔
-03 - ✔
-04 - ✔
+01✔ ||
+02✔ ||
+03✔ ||
+04✔ ||
 05 - ✔
 06 - ✔
 07 - ✔
