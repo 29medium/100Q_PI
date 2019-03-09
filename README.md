@@ -52,4 +52,4 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 47✔ ||
 48✔ ||
 49✔ ||
-50❌ ||
+50✔ ||
