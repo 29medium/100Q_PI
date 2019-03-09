@@ -28,7 +28,7 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 23✔ ||
 24✔ ||
 25✔ ||
-26❌ ||
+26✔ ||
 27❌ ||
 28✔ ||
 29✔ ||
