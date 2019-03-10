@@ -38,7 +38,7 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 33✔ ||
 34⁉ ||
 35❌ ||
-36❌ ||
+36✔ ||
 37✔ ||
 38✔ ||
 39✔ ||
