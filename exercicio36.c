@@ -10,12 +10,13 @@ int comuns (int a[],int na,int b[],int nb)
 	    for (j = 0;j<nb;j++)
 	    {
 	        if (a[i] == b[j])
-			    {
-				      com++;
-				      break;
-			    }
+			{
+				com++;
+				break;
+			}
 	    }
 			
-	}	
+	}
+		
 	return com;
 }
