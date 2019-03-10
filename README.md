@@ -18,7 +18,7 @@ Todas as perguntas neste repositório estão totalmente corretas nos testes da c
 13✔ ||
 14✔ ||
 15✔ ||
-16❌ ||
+16✔ ||
 17✔ ||
 18✔ ||
 19✔ ||
