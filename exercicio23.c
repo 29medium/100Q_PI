@@ -4,7 +4,7 @@
 
 int palindroma (char s[])
 {
-    int i, j, n=strlen(s)-1, stop=strlen(s)/2;
+    int i, j, n=strlen(s)-1;
     
     for (i=0, j=n; s[i]!='\0'; i++, j--)
     {
