@@ -14,7 +14,9 @@ int main()
             smax=max;
             max=i;
         }
+        
         else if (i>smax) smax=i; 
+        
         scanf("%d", &i);
     }
     printf("O segundo maximo é: %d", smax);
