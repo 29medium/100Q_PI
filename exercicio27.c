@@ -3,9 +3,9 @@
 
 void merge (int r [], int a[], int b[], int na, int nb)
 {
-    int i, j=0, k=0;
+    int i, j, k;
     
-    for(i=0; j+k<na+nb ; i++)
+    for(i=0, j=0, k=0; j+k<na+nb ; i++)
     {
         if (j==na)
         {
@@ -33,6 +33,5 @@ void merge (int r [], int a[], int b[], int na, int nb)
                 k++;
             }
         }
-        
     }
 }
