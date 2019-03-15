@@ -5,25 +5,21 @@
 typedef struct posicao {int x, y;} Posicao;
 
 int distancia (Posicao n)
-{
-    int dis;
-    
-    dis = abs(n.x) + abs(n.y);
-    
-    return dis;
+{    
+    return (abs(n.x) + abs(n.y));
 }
 
 int maiscentral (Posicao pos[], int N)
 {
-    int i, j=0, min=distancia(pos[0]);
+    int i, n=0, min=distancia(pos[0]);
     
     for(i=0; i<N; i++)
     {
         if (distancia(pos[i]) < min)
         {
             min = distancia(pos[i]);
-            j=i;
+            n=i;
         }
     }
-    return j;
+    return n;
 }
