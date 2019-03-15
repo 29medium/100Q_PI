@@ -13,6 +13,5 @@ int minInd (int v[], int n)
            k=i;
        }
    }
-   
    return k;
 }
