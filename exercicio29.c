@@ -17,5 +17,5 @@ int retiraNeg (int v[], int N)
             i--;
         }
     }
-    
+    return v;
 }
