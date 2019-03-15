@@ -11,6 +11,5 @@ int intersectSet (int N, int v1[N], int v2[N], int r[N])
         
         else r[i]=0;
     }
-    
     return r;
 }
