@@ -8,8 +8,6 @@ typedef struct lligada {
 LInt newLInt (int, LInt);
 int length (LInt l);
 
-// Não acabado
-
 void imprimeL (LInt l)
 {
     while(l!=NULL)
