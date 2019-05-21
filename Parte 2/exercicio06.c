@@ -17,15 +17,13 @@ LInt newLInt (int v, LInt t){
     return new;
 }
 
-// Segmentation Fault
-
 int removeOneOrd (LInt *l, int x)
 {
     LInt curr = *l, prev;
     
     if(curr==NULL) return 1;
     
-    else if(curr->prox==NULL && current->valor==x)
+    else if(curr->prox==NULL && curr->valor==x)
     {
         free(*l);
         *l = NULL;
