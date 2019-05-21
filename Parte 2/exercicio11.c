@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "listas.h"
+
+typedef struct lligada {
+    int valor;
+    struct lligada *prox;
+} *LInt;
 
 LInt newLInt (int v, LInt t){
     LInt new = (LInt) malloc (sizeof (struct lligada));
@@ -12,25 +16,26 @@ LInt newLInt (int v, LInt t){
     return new;
 }
 
-void remrep (LInt *l, int x)
+int remrep (LInt *l, int x)
 {
-    int k=1;
+    int k=1, cont;
     LInt aux=*l, prev;
     
     while(aux!=NULL)
     {
         if(aux->valor == x)
         {
-            if(i==0)
+            if(k==0)
             {
                 aux = aux->prox;
                 prev->prox=aux;
+                cont ++;
             }
             else
             {
                 prev=aux;
                 aux=aux->prox;
-                i--;
+                k--;
             }
         }
         else
@@ -39,11 +44,20 @@ void remrep (LInt *l, int x)
             aux=aux->prox;
         }
     }
+    return cont;
 }
 
 int removeDups (LInt *l)
 {
+    LInt aux = *l;
+    int cont=0, x;
     
+    while(aux!=NULL)
+    {
+        x = remrep(&aux, aux->valor);
+        cont += x;
+        aux=aux->prox;
+    }
     
-    return ;
+    return cont;
 }
