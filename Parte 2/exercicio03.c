@@ -1,12 +1,5 @@
 #include <stdio.h>
-
-typedef struct lligada {
-    int valor;
-    struct lligada *prox;
-} *LInt;
-
-LInt newLInt (int, LInt);
-int length (LInt l);
+#include <stdlib.h>
 
 void imprimeL (LInt l)
 {
