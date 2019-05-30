@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Incorreto
-
 void remreps (LInt l)
 {
-    if (l==NULL) return NULL;
+    if (l==NULL) return;
+    
+    if (l->prox == NULL) return;
     
     LInt aux=l->prox, prev=l;
     
@@ -19,7 +19,7 @@ void remreps (LInt l)
         }
         else
         {
-            prev->prox=aux;
+            prev=aux;
             aux=aux->prox;
         }
     }
