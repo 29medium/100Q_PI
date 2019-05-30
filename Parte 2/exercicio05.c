@@ -1,41 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Muito Grande
+
 void insertOrd (LInt *l, int x)
 {
     LInt curr = *l;
-    LInt prev, new;
+    LInt prev;
     
     if (curr == NULL)
     {
-        new = newLInt(x, NULL);
-        *l = new;
+        *l = newLInt(x, NULL);
         return;
     }
     
     if (x <= (*l)->valor)
     {
-        new = newLInt(x, *l);
-        *l = new;
+        *l = newLInt(x, *l);
         return;
     }
     
-    while(curr!=NULL)
+    while(curr!=NULL && x>curr->valor)
     {
-        if (x<=curr->valor)
-        {
-            new = newLInt(x, curr);
-            prev->prox = new;
-            break;
-        }
-        
         prev = curr;
         curr = curr->prox;
     }
     
-    if (curr==NULL)
-    {
-        new = newLInt(x, NULL);
-        prev->prox = new;
-    }
+    prev->prox = newLInt (x, curr);
 }
