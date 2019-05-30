@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Muito Grande
 void insertOrd (LInt *l, int x)
 {
     LInt curr = *l;
