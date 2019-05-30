@@ -7,7 +7,7 @@ int maximo (LInt l)
     
     while(l!=NULL)
     {
-        if(l->valor > max) max=l->valor;
+        if(l->valor >= max) max=l->valor;
         
         l=l->prox;
     }
