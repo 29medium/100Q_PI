@@ -37,3 +37,5 @@ void posorder (ABin a, LInt * l)
         acLInt(a->valor, l);
     }
 }
+
+// Testes estao incorretos porque l não está inicializado a NULL, mas a função está correta
