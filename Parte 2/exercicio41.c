@@ -3,7 +3,7 @@
 
 ABin somasAcA (ABin a) 
 {
-    if (a==NULL) return NULL;
+    if (a == NULL) return NULL;
     
     ABin newEsq = somasAcA(a->esq);
     ABin newDir = somasAcA(a->dir);
