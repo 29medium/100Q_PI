@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Not Working
-
 LInt somasAcL (LInt l) 
 {
-    LInt aux=l;
-    int soma=0, val;
+    if (l==NULL) return NULL;
     
-    while(aux!=NULL)
+    if (l->prox==NULL) return newLInt(l->valor, NULL);
+    
+    LInt aux = l, start=newLInt(0, NULL), res=start;
+    int soma = 0;
+    
+    while (aux!=NULL)
     {
-        aux->valor = val;
-        aux->valor += soma;
-        soma += val;
-        aux = aux->prox;
+        soma += aux->valor;
+        res->prox = newLInt(soma, NULL);
+        aux = aux-> prox;
+        res=res->prox;
     }
     
-    return l;
+    return start->prox;
 }
