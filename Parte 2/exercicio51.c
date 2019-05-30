@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int minValue (ABin a)
 {
     if (a->esq == NULL) return a->valor; 
@@ -16,9 +19,9 @@ int deProcura (ABin a)
 {
     if (a==NULL) return 1;
     
-    if (maxValue(a->esq) > a->valor && a->esq!=NULL) return 0;
+    if (a->esq!=NULL && maxValue(a->esq) > a->valor) return 0;
     
-    else if (minValue(a->dir) < a->valor && a->dir!=NULL) return 0;
+    else if (a->dir!=NULL && minValue(a->dir) < a->valor) return 0;
     
     else if (!deProcura(a->esq) || !deProcura(a->dir)) return 0;
     
