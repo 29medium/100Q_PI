@@ -37,3 +37,5 @@ void preorder (ABin a, LInt * l)
         preorder (a->dir, l);
     }
 }
+
+// Testes estao incorretos porque l não está inicializado a NULL, mas a função está correta
