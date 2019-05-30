@@ -13,7 +13,5 @@ LInt reverseL (LInt l)
         aux=next;
     }
     
-    l = prev;
-    
-    return l;
+    return prev;
 }
