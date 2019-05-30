@@ -8,7 +8,7 @@ LInt rotateL (LInt l)
     LInt aux=l, newL=l;
     l = l->prox;
     
-    while(aux->prox!=NULL) aux=aux->prox;
+    while(aux->prox != NULL) aux=aux->prox;
     
     aux->prox=newL;
     newL->prox=NULL;
