@@ -1,9 +1,5 @@
-#include "abin.h"
-
-/* Defina uma função "LInt nivelL (ABin a, int n)" que, dada uma árvore
- binária, constrói uma lista com os valores dos elementos que estão armazenados
- na árvore ao nível "n" (assuma que a raiz da árvore está ao nível "1").  */
-
+#include <stdio.h>
+#include <stdlib.h>
 
 void niv (LInt *b, ABin a, int n)
 {
@@ -20,7 +16,16 @@ void niv (LInt *b, ABin a, int n)
     else
     {
         n--;
-        niv (b, a->esq, n);
         niv (b, a->dir, n);
+        niv (b, a->esq, n);
     }
+}
+
+LInt nivelL (ABin a, int n) 
+{
+    LInt l=NULL;
+    
+    niv (&l, a, n);
+    
+    return l;
 }
