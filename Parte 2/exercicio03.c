@@ -7,6 +7,6 @@ void imprimeL (LInt l)
     {
         printf("%d\n", l->valor);
 
-        l = l->prox;
+        l=l->prox;
     }
 }
