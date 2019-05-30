@@ -3,7 +3,7 @@
 
 ABin cloneMirror (ABin a) 
 {
-    if (a==NULL) return NULL;
+    if (a == NULL) return NULL;
     
     ABin mirror = (ABin) malloc(sizeof(ABin));
     ABin newEsq = cloneMirror(a->dir);
