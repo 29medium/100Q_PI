@@ -1,44 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Não totamente correto
-
 void splitQS (LInt l, int x, LInt *mx, LInt *Mx)
 {
-    LInt currM, currm;
+    *mx = newLInt(0, NULL), *Mx = newLInt(0, NULL);
+    LInt auxm = *mx, auxM = *Mx;
     
     while(l!=NULL)
     {
         if(l->valor < x)
         {
-            if(*mx==NULL)
-            {
-                *mx=l;
-                currm = *mx;
-                currm->prox=NULL;
-            }
-            else
-            {
-                currm->prox = l;
-                currm = currm->prox;
-                currm->prox=NULL;
-            }
+            auxm->prox = l;
+            auxm = auxm->prox;
+            l = l->prox;
+            auxm->prox=NULL;
         }
         else
         {
-            if(*Mx==NULL)
-            {
-                *Mx=l;
-                currM = *Mx;
-                currM->prox=NULL;
-            }
-            else
-            {
-                currM->prox = l;
-                currM = currM->prox;
-                currM->prox=NULL;
-            }
+            auxM->prox = l;
+            auxM = auxM->prox;
+            l=l->prox;
+            auxM->prox=NULL;
         }
-        l=l->prox;
     }
+    *mx = (*mx)->prox;
+    *Mx = (*Mx)->prox;
 }
