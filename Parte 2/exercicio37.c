@@ -11,5 +11,5 @@ int iguaisAB (ABin a, ABin b)
     
     else if (a->valor != b->valor) return 0;
 
-    else return iguaisAB(a->esq, b->esq) * iguaisAB(a->dir, b->dir);
+    else return iguaisAB(a->dir, b->dir) * iguaisAB(a->esq, b->esq);
 }
