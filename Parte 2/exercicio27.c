@@ -37,6 +37,7 @@ LInt parte (LInt l)
     aux = imparInicio;
     imparInicio = imparInicio->prox;
     free(aux);
+    l = imparInicio;
     
     return parInicio;
 }
