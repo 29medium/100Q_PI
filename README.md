@@ -1,6 +1,4 @@
-# 100Q_PI
-Questões de PI
+# Imperative_Programing
 
-Parte 1 (1-50)
-
-Todas as perguntas neste repositório estão totalmente corretas nos testes da codeboard.
+This questions were resolved for the Imperative Programing subject.
+All questions were tested in the teacher's test platform.
